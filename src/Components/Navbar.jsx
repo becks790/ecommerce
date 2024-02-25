@@ -69,6 +69,11 @@ export default function Navbar() {
                   Orders
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to={"wishlist"}>
+                  Wish List
+                </Link>
+              </li>
 
             </ul>
           )}

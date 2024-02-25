@@ -23,6 +23,7 @@ import ForgotPassword from "./Components/ForgotPassword";
 import VerifyCode from "./Components/VerifyCode";
 import ResetPassword from "./Components/ResetPassword";
 import AllProducts from "./Components/AllProducts";
+import WishList from "./Components/WishList";
 // import SpecificCategory from "./Components/SpecificCategory";
 
 
@@ -63,6 +64,7 @@ function App() {
         {path: "address/:cartId",element: (<ProtectedRoute> <Address /> </ProtectedRoute>),},
         {path: "categories",element: ( <ProtectedRoute><AllCategories /></ProtectedRoute>)},
         {path: "allOrders",element: ( <ProtectedRoute> <Orders /> </ProtectedRoute>)},  
+        {path: "wishlist",element: ( <ProtectedRoute> <WishList /> </ProtectedRoute>)},  
         {path: "productDetails/:id",element: ( <ProtectedRoute> <ProductDetails /> </ProtectedRoute>)},
         { path: "login", element: <Login /> },
         { path: "passwordReset", element: <ForgotPassword /> },
